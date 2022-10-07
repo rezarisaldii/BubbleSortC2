@@ -38,8 +38,21 @@ namespace BubbleSortC2
             {
                 Console.Write("<" + (i + 1) + "> ");
                 string s1 = Console.ReadLine();
-                a[i] = Int32.Parse(s1);
+                a[i] = Int32.Parse(s1); 
             }
+        }
+        public void display()
+        {
+            //menampilkan array yang tersusun
+            Console.WriteLine("");
+            Console.WriteLine("---------------------------------------");
+            Console.WriteLine(" Elemen pada array yang telat tersusun ");
+            Console.WriteLine("---------------------------------------");
+            for (int j = 0; j < n; j++)
+            {
+                Console.WriteLine(a[j]);
+            }
+            Console.WriteLine("");
         }
         static void Main(string[] args)
         {
