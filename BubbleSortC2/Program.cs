@@ -54,6 +54,24 @@ namespace BubbleSortC2
             }
             Console.WriteLine("");
         }
+        public void BubbleSortArray()
+        {
+            for (int i = 1; i < n; i++) // For n - 1 Passes
+            {
+                // pada pass i, bandingkan n - i elemen pertama dengan elemen selanjutnya
+                for (int j = 0; j < n - i; j++)
+                {
+                    if (a[j] > a[j + 1]) // jika elemen tidak dalam urutan yang benar
+                    {
+                        // tukar elemen
+                        int temp;
+                        temp = a[j];
+                        a[j] = a[j + 1];
+                        a[j + 1] = temp;   
+                    }
+                }
+            }
+        }
         static void Main(string[] args)
         {
 
