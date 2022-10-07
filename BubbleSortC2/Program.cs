@@ -6,10 +6,18 @@ using System.Threading.Tasks;
 
 namespace BubbleSortC2
 {
-    internal class Program
+    class Program
     {
+        // deklarasi array int dengan ukuran 20
+        private int[] a = new int[20];
+
+        // deklarasi variabel int untuk menyimpan banyaknya data pada array
+        private int n;
+
+        // fungsi/method untuk menerima masukan
         static void Main(string[] args)
         {
+
         }
     }
 }
